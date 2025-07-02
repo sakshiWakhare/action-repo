@@ -1,0 +1,13 @@
+name: Dummy Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub info
+        run: echo "Triggered on push to main"
